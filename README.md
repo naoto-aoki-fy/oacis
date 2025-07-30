@@ -29,6 +29,7 @@ If you have a trouble of handling many simulation jobs, OACIS will definitely he
 
 A small sample of parameter sweep over parameters "p1" and "p2" of your simulator.
 See http://crest-cassia.github.io/oacis/en/api.html for more details.
+Documentation for the MCP API is available in [docs/en/mcp_api.md](docs/en/mcp_api.md).
 OACIS has both Ruby and Python APIs.
 
 ```ruby

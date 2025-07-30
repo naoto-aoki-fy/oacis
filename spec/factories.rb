@@ -222,5 +222,11 @@ FactoryBot.define do
     message { 'This is a test message.' }
     read { false }
   end
+
+  factory :mcp do
+    sequence(:name) { |n| "mcp#{n}" }
+    value { 1 }
+    description { 'test mcp' }
+  end
 end
 

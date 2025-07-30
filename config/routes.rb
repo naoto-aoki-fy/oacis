@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   post '/parameter_sets/_delete_selected', to: 'parameter_sets#_delete_selected' if OACIS_ACCESS_LEVEL >= 1
   post '/parameter_sets/_create_runs_on_selected', to: 'parameter_sets#_create_runs_on_selected' if OACIS_ACCESS_LEVEL >= 1
 
+  resources :mcps, only: %i[index show create update]
+
   resources :runs, only: ["index"] do
     collection do
       get "_jobs_table" # for ajax, datatables
